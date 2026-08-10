@@ -11,8 +11,12 @@ No Linux / WSL / macOS:
 gcc -Wall trabalho.c -o trabalho
 ./trabalho
 ```
-Estruturas de Dados Utilizadas
+Estruturas de Dados Utilizadas:
+
 Pilha (LIFO): Fileira principal do estacionamento.
+
 Fila (FIFO): Fila de espera externa.
+
 Lista Encadeada Simples: Histórico de saídas.
+
 Bubble Sort: Ordenação do relatório por número de manobras.
