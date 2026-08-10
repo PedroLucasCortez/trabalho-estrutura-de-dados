@@ -147,7 +147,7 @@ int main() {
 
 // Implementação das funções
 
-// --- Operações da Pilha ---
+// Operações da Pilha
 void inicializar_pilha(PilhaEstacionamento* p) {
     p->topo = -1;
 }
@@ -170,7 +170,7 @@ Veiculo desempilhar(PilhaEstacionamento* p) {
     return p->itens[(p->topo)--];
 }
 
-// --- Operações da Fila ---
+// Operações da Fila
 void inicializar_fila(FilaEspera* f) {
     f->inicio = f->fim = NULL;
 }
@@ -200,7 +200,7 @@ Veiculo desenfileirar(FilaEspera* f) {
     return v;
 }
 
-// --- Operações do Histórico (Lista Encadeada) ---
+// Operações do Histórico (Lista Encadeada)
 void inicializar_historico(ListaHistorico* h) {
     h->cabeca = NULL;
 }
@@ -249,7 +249,7 @@ void exibir_historico(ListaHistorico* h) {
     }
 }
 
-// --- Lógica de Retirada e Manobra ---
+// Lógica de Retirada e Manobra
 void retirar_veiculo(PilhaEstacionamento* p, FilaEspera* f, ListaHistorico* h, char* placa) {
     PilhaEstacionamento aux;
     inicializar_pilha(&aux);
@@ -295,7 +295,7 @@ void retirar_veiculo(PilhaEstacionamento* p, FilaEspera* f, ListaHistorico* h, c
     }
 }
 
-// --- Busca Sequencial ---
+// Busca Sequencial
 Veiculo* buscar_veiculo(PilhaEstacionamento* p, char* placa) {
     for (int i = 0; i <= p->topo; i++) {
         if (strcmp(p->itens[i].placa, placa) == 0) {
