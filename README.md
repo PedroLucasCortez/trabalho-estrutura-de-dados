@@ -1,4 +1,4 @@
-Simulador de Estacionamento com Manobrista
+Simulador de estacionamento com manobrista
 
 Trabalho Final da disciplina de Estrutura de Dados I.
 
